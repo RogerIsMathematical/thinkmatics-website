@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore and understand mathematics through discovery, not memorization">
+    <title>Thinkmatics - Learn Math Through Thinking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .tagline {
+            font-style: italic;
+            margin-top: 5px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+            border-radius: 3px;
+        }
+        .problem-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .problem {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+        }
+        .hint {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin-top: 10px;
+            display: none;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 5px;
+        }
+        .about-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Math Explorer</h1>
+        <p class="tagline">Discover the beauty of mathematics through exploration</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#problems">Problems</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="about-section" id="about">
+        <h2>Welcome to Math Explorer!</h2>
+        <p>We believe mathematics isn't about memorization—it's about understanding, discovery, and problem-solving. Our approach helps students explore mathematical concepts deeply and develop genuine mathematical intuition.</p>
+    </div>
+
+    <div class="problem-section" id="problems">
+        <h2>Today's Challenge</h2>
+        
+        <div class="problem">
+            <h3>Problem 1: The Consecutive Odd Numbers</h3>
+            <p>Can you find three consecutive odd numbers that sum to 27?</p>
+            <button onclick="toggleHint('hint1')">Show Hint</button>
+            <div id="hint1" class="hint">
+                <strong>Hint:</strong> If the first odd number is n, what would the next two consecutive odd numbers be? (Remember, odd numbers are 2 apart!)
+            </div>
+        </div>
+
+        <div class="problem">
+            <h3>Problem 2: Pattern Discovery</h3>
+            <p>Look at this sequence: 1, 4, 9, 16, 25, ...  What's the pattern? What's the 10th number?</p>
+            <button onclick="toggleHint('hint2')">Show Hint</button>
+            <div id="hint2" class="hint">
+                <strong>Hint:</strong> Try looking at the differences between consecutive numbers. Or think about what these numbers represent geometrically...
+            </div>
+        </div>
+
+        <div class="problem">
+            <h3>Problem 3: The Handshake Problem</h3>
+            <p>If there are 5 people in a room and everyone shakes hands with everyone else exactly once, how many handshakes occur?</p>
+            <button onclick="toggleHint('hint3')">Show Hint</button>
+            <div id="hint3" class="hint">
+                <strong>Hint:</strong> Start small. What if there were only 2 people? 3 people? Can you find a pattern?
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="contact">
+        <h2>Get Started</h2>
+        <p>Ready to explore mathematics in a whole new way?</p>
+        <p>Email: contact@mathexplorer.com</p>
+        <p>Or follow us on social media for daily problems and insights!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Math Explorer. Helping students discover the joy of mathematics.</p>
+    </footer>
+
+    <script>
+        function toggleHint(hintId) {
+            const hint = document.getElementById(hintId);
+            if (hint.style.display === "none" || hint.style.display === "") {
+                hint.style.display = "block";
+            } else {
+                hint.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
